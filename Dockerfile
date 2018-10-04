@@ -1,12 +1,13 @@
 FROM node:10.11
 
-RUN mkdir /app
-
 WORKDIR /app
 
-COPY . /app
+COPY ./package.json /app/package.json
+COPY ./yarn.lock /app/yarn.lock
 
 RUN yarn install
+
+COPY . /app
 
 EXPOSE 3000
 
