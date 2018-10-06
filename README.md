@@ -14,4 +14,8 @@ $ docker ps
 $ docker exec -it <container id> /bin/bash
 
 $ docker stop <container id>
+
+$ docker-compose up
+
+$ docker-compose down
 ```

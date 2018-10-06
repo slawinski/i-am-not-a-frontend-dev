@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/app
+      - /app/node_modules # Sharing code between the container and the host file system shouldn't apply to node_modules.
+    ports:
+      - "3000:3000"
+    command: yarn start
