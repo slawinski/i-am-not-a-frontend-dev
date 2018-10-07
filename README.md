@@ -2,6 +2,10 @@
 
 [![Build Status](https://semaphoreci.com/api/v1/slawinski/i-am-not-a-frontend-dev/branches/master/shields_badge.svg)](https://semaphoreci.com/slawinski/i-am-not-a-frontend-dev)
 
+TODO:
+- add webpack
+- throw in frontend from developer's brew repo
+
 To run the docker use the below:
 
 ```
