@@ -5,7 +5,8 @@
 TODO:\
 [ &nbsp;] Add webpack\
 [ &nbsp;] Throw in some frontend from developer's brew repo\
-[ &nbsp;] Implement tests
+[ &nbsp;] Implement tests\
+[ &nbsp;] Add linter
 
 To run the docker use the below:
 
