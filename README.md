@@ -19,7 +19,7 @@ TBD
 
 ## TODOs
 ✅ README\
-❌ Docker\
+✅ Docker\
 ❌ Webpack\
 ❌ Linter\
 ❌ Tests\
