@@ -2,28 +2,34 @@
 
 [![Build Status](https://semaphoreci.com/api/v1/slawinski/i-am-not-a-frontend-dev/branches/master/shields_badge.svg)](https://semaphoreci.com/slawinski/i-am-not-a-frontend-dev)
 
-TODO:\
-[\*] Docker\
-[ &nbsp;] Webpack\
-[ &nbsp;] Linter\
-[ &nbsp;] Tests\
-[ &nbsp;] Frontend\
+This will become sort of a portfolio. Eventually.
 
+## Getting started
 
-To run the docker use the below:
+Make sure you have Docker and Compose installed and running locally ([click](https://www.docker.com)).
 
+Then run:
+```bash
+docker-compose up --build
 ```
-$ docker build -t <app-name> .
 
-$ docker run -p 3000:3000 -d --rm <app-name>
+## Running the tests
 
-$ docker ps
+TBD
 
-$ docker exec -it <container id> /bin/bash
+## TODOs
+✅ README\
+❌ Docker\
+❌ Webpack\
+❌ Linter\
+❌ Tests\
+❌ Heroku\
+❌ Frontend\
 
-$ docker stop <container id>
+## License
 
-$ docker-compose up
+TBD
 
-$ docker-compose down
-```
+## Acknowledgments
+
+TBD
