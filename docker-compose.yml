@@ -5,7 +5,17 @@ services:
     build: .
     volumes:
       - .:/app
-      - /app/node_modules # Sharing code between the container and the host file system shouldn't apply to node_modules.
+      - /app/node_modules
     ports:
       - "3000:3000"
     command: yarn start
+
+  webpack:
+    build: .
+    depends_on:
+      - web
+    volumes:
+      - .:/app
+      - /app/node_modules
+    working_dir: /app
+    command: webpack --watch

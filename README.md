@@ -9,6 +9,7 @@ This will become sort of a portfolio. Eventually.
 Make sure you have Docker and Compose installed and running locally ([click](https://www.docker.com)).
 
 Then run:
+
 ```bash
 docker-compose up --build
 ```
@@ -18,10 +19,11 @@ docker-compose up --build
 TBD
 
 ## TODOs
+
 ✅ README\
 ✅ Docker\
-❌ Webpack\
-❌ Linter\
+✅ Webpack\
+✅ Linter\
 ❌ Tests\
 ❌ Heroku\
 ❌ Frontend\
