@@ -9,13 +9,3 @@ services:
     ports:
       - "3000:3000"
     command: yarn start
-
-  webpack:
-    build: .
-    depends_on:
-      - web
-    volumes:
-      - .:/app
-      - /app/node_modules
-    working_dir: /app
-    command: webpack --watch
