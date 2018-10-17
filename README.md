@@ -25,7 +25,7 @@ TBD
 ✅ Webpack\
 ✅ Linter\
 ❌ Tests\
-❌ Heroku\
+✅ Heroku\
 ✅ Frontend\
 
 ## License
