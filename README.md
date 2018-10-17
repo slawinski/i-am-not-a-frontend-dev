@@ -2,7 +2,7 @@
 
 [![Build Status](https://semaphoreci.com/api/v1/slawinski/i-am-not-a-frontend-dev/branches/master/shields_badge.svg)](https://semaphoreci.com/slawinski/i-am-not-a-frontend-dev)
 
-This will become sort of a portfolio. Eventually.
+This is a response to a common misconception that I'm a frontend developer. I'm not. I also do not code backend exclusively. Am I a fullstack? Eventually - yes. Currently - I'm getting there.
 
 ## Getting started
 
@@ -26,7 +26,7 @@ TBD
 ✅ Linter\
 ❌ Tests\
 ❌ Heroku\
-❌ Frontend\
+✅ Frontend\
 
 ## License
 
