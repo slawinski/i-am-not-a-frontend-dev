@@ -1,5 +1,7 @@
-html, body {
-  height: 100%; }
+html,
+body {
+  height: 100%;
+  font-size: 25px; }
 
 video {
   position: absolute;
@@ -14,7 +16,7 @@ video {
   position: fixed;
   z-index: -1;
   background: black;
-  opacity: 0.5; }
+  opacity: 0.3; }
 
 .flex-container {
   height: 100%;
@@ -22,20 +24,16 @@ video {
   align-items: center;
   justify-content: center; }
 
-.title h1 {
+.title {
   text-align: center;
-  color: #DDE2E3;
-  font-family: "Pacifico", cursive;
-  font-size: 5em;
   z-index: 1;
   text-shadow: 2px 2px 4px #000000; }
-
-.title h3 {
-  padding-top: 20px;
-  text-align: center;
-  color: #DDE2E3;
-  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  z-index: 1;
-  text-shadow: 2px 2px 4px #000000; }
+  .title h1 {
+    color: #DDE2E3;
+    font-family: "Pacifico", cursive;
+    font-size: 5em; }
+  .title h3 {
+    color: #DDE2E3;
+    font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
