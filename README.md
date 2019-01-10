@@ -27,8 +27,8 @@ TBD
 ❌ Tests\
 ✅ Heroku\
 ✅ Frontend\
-✅ PWA\
-✅ React
+❌ PWA\
+❌ React
 
 ## License
 
