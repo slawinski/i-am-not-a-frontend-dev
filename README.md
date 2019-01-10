@@ -26,7 +26,9 @@ TBD
 ✅ Linter\
 ❌ Tests\
 ✅ Heroku\
-✅ Frontend
+✅ Frontend\
+✅ PWA\
+✅ React
 
 ## License
 
