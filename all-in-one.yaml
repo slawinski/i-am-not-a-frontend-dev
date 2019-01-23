@@ -21,7 +21,8 @@ spec:
         image: iamnotafedregistry.azurecr.io/i-am-not-a-frontend-dev_web:v1
         imagePullPolicy: Always
         ports:
-        - containerPort: 80
+        - containerPort: 9376
+          protocol: TCP
       imagePullSecrets:
       - name: acr-auth
 ---
@@ -31,7 +32,10 @@ metadata:
   name: iamnotafed-frontend-lb
 spec:
   type: LoadBalancer
-  ports:
-  - port: 80
   selector:
     app: iamnotafed-frontend
+  ports:
+  - name: default
+    protocol: TCP
+    port: 80
+    targetPort: 9376
