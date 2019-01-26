@@ -1,0 +1,41 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: iamnotafed-frontend
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  minReadySeconds: 15
+  template:
+    metadata:
+      labels:
+        app: iamnotafed-frontend
+    spec:
+      containers:
+      - name: iamnotafed-frontend
+        image: iamnotafedregistry.azurecr.io/i-am-not-a-frontend-dev_web:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 9376
+          protocol: TCP
+      imagePullSecrets:
+      - name: acr-auth
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: iamnotafed-frontend-lb
+spec:
+  type: LoadBalancer
+  selector:
+    app: iamnotafed-frontend
+  ports:
+  - name: default
+    protocol: TCP
+    port: 80
+    targetPort: 9376
