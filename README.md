@@ -53,7 +53,7 @@ kubectl logs --namespace=kube-system $(kubectl get pods --namespace=kube-system 
 
 ```bash
 kubectl exec <pod_name> cat /etc/resolv.conf
-kubectl exec <pod_name -c iamnotafed-frontend -- wget -O- iamnnotafed-frontend-lb
+kubectl exec <pod_name> -c iamnotafed-frontend -- wget -O- iamnnotafed-frontend-lb
 ```
 In case an image should be deleted from container repository by tag or manifest digest use:
 https://docs.microsoft.com/en-us/azure/container-registry/container-registry-delete
